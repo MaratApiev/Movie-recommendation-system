@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffectw} from 'react'
+import MainRoutes from './MainRoutes'
+// import AuthContextProvider from './compontents/contexts/AuthContextProvider'
+import { BrowserRouter } from 'react-router-dom'
+// import FavContextProvider from './compontents/contexts/FavContextProvider'
+// import MovieContextProvider from './compontents/contexts/MovieContextProvider'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>
+      {/* <FavContextProvider>
+        <MovieContextProvider>
+          <AuthContextProvider> */}
+              <MainRoutes/>
+          {/* </AuthContextProvider>
+        </MovieContextProvider>
+      </FavContextProvider> */}
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
