@@ -1,24 +1,19 @@
-import React, {useEffectw} from 'react'
-import MainRoutes from './MainRoutes'
+import MainRoutes from "./MainRoutes";
 // import AuthContextProvider from './compontents/contexts/AuthContextProvider'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
+import MovieContextProvider from "./contexts/MovieContextProvider";
 // import FavContextProvider from './compontents/contexts/FavContextProvider'
-// import MovieContextProvider from './compontents/contexts/MovieContextProvider'
 
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      {/* <FavContextProvider>
+      <BrowserRouter>
         <MovieContextProvider>
-          <AuthContextProvider> */}
-              <MainRoutes/>
-          {/* </AuthContextProvider>
+          <MainRoutes />
         </MovieContextProvider>
-      </FavContextProvider> */}
       </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

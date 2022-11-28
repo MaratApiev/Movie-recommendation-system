@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext, useEffect } from "react";
+import { movieContext } from "../../contexts/MovieContextProvider";
 
 const MoviesPage = () => {
-  return (
-    <div>MoviesPage</div>
-  )
-}
+  const { moviesArr, readMovies } = useContext(movieContext);
+  console.log(moviesArr);
 
-export default MoviesPage
+  useEffect(() => {
+    readMovies();
+  }, []);
+
+  return <div></div>;
+};
+
+export default MoviesPage;
