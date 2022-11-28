@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "name": "qwertyu",
+      "img": "qwerty",
+      "desc": "qwerty",
+      "genre": "qwe",
+      "actors": "йцука",
+      "year": "цуап",
+      "id": 1
+    },
+    {
+      "name": "qwert",
+      "img": "wert",
+      "desc": "wertgh",
+      "genre": "werth",
+      "actors": "wertgh",
+      "year": "wert",
+      "id": 2
+    },
+    {
+      "name": "asdf",
+      "img": "ergh",
+      "desc": "wertyh",
+      "genre": "erty",
+      "actors": "ertyh",
+      "year": "ertyh",
+      "id": 3
+    },
+    {
+      "name": "qwer",
+      "img": "wer",
+      "desc": "wer",
+      "genre": "wert",
+      "actors": "wert",
+      "year": "wert",
+      "id": 4
+    }
+  ]
+}
